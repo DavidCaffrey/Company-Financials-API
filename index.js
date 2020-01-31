@@ -1,7 +1,13 @@
+var sym = "GOOG";
+var http = "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?symbol=" + sym;
+var resp = "";
+var jsObj = null;
+
+
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?symbol=AAPL",
+	"url": http,
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
@@ -10,5 +16,12 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-	console.log(response);
+ 
+    resp = JSON.stringify(response);
+    console.log(resp);
+    jsObj = JSON.parse(resp);
+    console.log(jsObj);
+    console.log(jsObj.cashflowStatementHistory);
 });
+
+

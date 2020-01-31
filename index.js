@@ -22,6 +22,14 @@ $.ajax(settings).done(function (response) {
     jsObj = JSON.parse(resp);
     console.log(jsObj);
     console.log(jsObj.cashflowStatementHistory);
+    console.log(jsObj.price.regularMarketOpen.fmt);
+    console.log(jsObj.price.regularMarketDayHigh.fmt);
 });
 
+/*function myFunction() {
+  setTimeout(function(){ 
+     console.log(jsObj.price.regularMarketOpen.fmt);
+     console.log(jsObj.price.regularMarketDayHigh.fmt);
+   }, 3000);
+}*/
 

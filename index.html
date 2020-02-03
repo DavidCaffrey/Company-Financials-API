@@ -3,39 +3,49 @@
 
 <head>
 	<title>Company Financials Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-
+    <div>
 	<h1>Companies Financials Profile</h1>
-	<hr>
+    </div>
+	<hr >
 	</hr>
 	<p>This is a paragraph.</p>
 	<form action="/action_page.php">
-		<select name="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select>
-		<select name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-		<select name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
+		<select name="companies">
+            <option value="FB">Facebook</option>
+            <option value="AMZN">Amazon</option>
+            <option value="AAPL">Apple</option>
+            <option value="NTFX">Netflix</option>
+            <option value="GOOG">Google</option>
+        </select>
+		<select name="income-statement">
+            <option value="volvo">Income Statement</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+		<select name="balance-sheet">
+            <option value="volvo">Balance Sheet</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        	<select name="cash-flow">
+            <option value="volvo">Cash Flow Statement</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
 		<br><br>
 		<input type="submit" onclick="myFunction()">
-</form>
+    </form>
 
-		<script src="index.js"></script>
+	<script src="index.js"></script>
 </body>
 
 </html>

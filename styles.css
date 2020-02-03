@@ -1,0 +1,10 @@
+body, html{
+    background-color: #001025;
+    font-family: 'Lato', sans-serif;
+    color: #4a90e2;
+    text-align: center;
+}
+
+hr {
+    border : 1px solid #4a90e2;
+}

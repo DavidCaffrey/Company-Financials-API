@@ -3,8 +3,39 @@ body, html{
     font-family: 'Lato', sans-serif;
     color: #4a90e2;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 hr {
     border : 1px solid #4a90e2;
+}
+
+select{
+    background-color: #001025;
+     color: #4a90e2;
+    letter-spacing: 5px;
+    margin: 10px 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+option{
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}
+option:hover{
+    color:#59f40c;
+}
+
+label{
+    color: #59f40c;
+}
+
+button{
+    color: #4a90e2;
+    background-color: #001025;
+    border: 2px solid #4a90e2;
+    height: 40px;
+    border-radius: 10px;
 }

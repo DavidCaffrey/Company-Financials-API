@@ -16,7 +16,7 @@
 	</hr>
 	<h3>Providing detailed company analysis since 2020</h3>
     <hr>
-	<form action="/action_page.php">
+	<form >
     <label>Company</label>
 		<select name="companies">
             
@@ -26,29 +26,9 @@
             <option value="NTFX">Netflix</option>
             <option value="GOOG">Google</option>
         </select>
-        <label>Income Statement</label>
-		<select name="income-statement">
-            <option value="volvo">Revenue</option>
-            <option value="saab">Gross Profit</option>
-            <option value="fiat">EBITDA</option>
-            <option value="audi">Net Income</option>
-        </select>
-        <label>Balance Sheet</label>
-		<select name="balance-sheet">
-            <option value="volvo">Total Assets</option>
-            <option value="saab">Total Liabilities</option>
-            <option value="fiat">Total Equity</option>
-            
-        </select>
-        <label>Cash Flow Statement</label>
-        <select name="cash-flow">
-            <option value="volvo">Total Cash</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-        </select>
+      
 		<br><br>
-		<button>Get Data from API</button>
+		<input id="getApiData" type="submit" value="Get Data from API">
     </form>
 
 	<script src="index.js"></script>

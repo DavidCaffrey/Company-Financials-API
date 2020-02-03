@@ -18,13 +18,13 @@
     <hr>
 	<form >
     <label>Company</label>
-		<select name="companies">
+		<select id="mySelect" name="companies" onchange="companyName(document.getElementById('mySelect').value)"
             
-            <option value="FB">Facebook</option>
-            <option value="AMZN">Amazon</option>
-            <option value="AAPL">Apple</option>
-            <option value="NTFX">Netflix</option>
-            <option value="GOOG">Google</option>
+            <option id="facebook" value="FB">Facebook</option>
+            <option id="amazon" value="AMZN">Amazon</option>
+            <option id="apple" value="AAPL">Apple</option>
+            <option id="netflix" value="NFLX">Netflix</option>
+            <option id="google" value="GOOG">Google</option>
         </select>
       
 		<br><br>

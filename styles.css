@@ -32,9 +32,10 @@ option:hover{
 
 label{
     color: #59f40c;
+    font-size: 25px;
 }
 
-#getApiData{
+button{
     color: #4a90e2;
     background-color: #001025;
     border: 2px solid #4a90e2;

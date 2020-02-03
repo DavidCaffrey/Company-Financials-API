@@ -1,21 +1,26 @@
 
-var str = "AAPL";
+
+
+
 
 
 
 
 $(document).ready(function(){
+    var selected = $("#mySelect").text();
+    console.log(selected);
     $("button").click(function(){
+        var selected = $("#mySelect").text();
         var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?symbol=" + str,
-	"method": "GET",
-	"headers": {
+	    "async": true,
+	    "crossDomain": true,
+	    "url": "https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-financials?symbol=" + selected,
+	    "method": "GET",
+	    "headers": {
 		"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
 		"x-rapidapi-key": "801e9cc85emsh011e19eee53d290p16417ejsn0b14e78123b6"
-	}
-}
+	    }
+    }
         $.ajax(settings).done(function (response) {
     // turns JSON Object into a string
          resp = JSON.stringify(response);

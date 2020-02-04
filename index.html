@@ -18,7 +18,7 @@
     <hr>
 	<form >
     <label>Select Company</label>
-		<select id="mySelect" name="companies" required>
+		<select id="mySelect" name="companies" onchange="myFunction()">
             <option id="blank" class="options" value="">Company</option>
             <option id="facebook" class="options" value="FB">Facebook</option>
             <option id="amazon"class="options" value="AMZN">Amazon</option>
@@ -30,6 +30,7 @@
 		<br><br>
 		
     </form>
+    <p id="demo"></p>
     <button id="getData">Get</button>
 
 	<script src="index.js"></script>

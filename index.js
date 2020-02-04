@@ -1,4 +1,5 @@
 var selected = "FB";
+var jsObj;
  function myFunction() {
      console.log(selected);
     selected = document.getElementById("mySelect").value;
@@ -28,10 +29,11 @@ $(document).ready(function () {
         $.ajax(settings).done(function (response) {
             // turns JSON Object into a string
             resp = JSON.stringify(response);
-            //console.log(resp);
+            console.log(resp);
             // turns string into JSON Object
             jsObj = JSON.parse(resp);
             console.log(jsObj);
+            genHtmlFromJson(jsObj)
 
 
             /* deep dive through JSON Objects to get data points
@@ -46,6 +48,17 @@ $(document).ready(function () {
     });
 });
 
+function genHtmlFromJson(jsObj){
+    var txt= "";
+    txt += "<table border='1px solid green'>"
+    txt += "<tr><th>CASH FLOW</th><th>AMOUNT</th><th>BALANCE SHEET</th><th>AMOUNT</th><th>INCOME</th><th>AMOUNT</th></tr>"
+    txt += "<tr><td>net income</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netBorrowings.longFmt  + "</td></tr>";
+    txt += "<tr><td>net borrowings</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netIncome.longFmt  + "</td></tr>";  
+    txt += "<tr><td>cash from operations</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].totalCashFromOperatingActivities.longFmt  + "</td></tr>";  
+    txt += "<tr></tr>";    
+    txt += "</table>"
+    document.getElementById("demo").innerHTML = txt;
+}
 
 
 

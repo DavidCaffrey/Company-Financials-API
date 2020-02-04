@@ -3,22 +3,23 @@
 
 <head>
 	<title>Company Financials Profile</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <div>
-	<h1>Companies Financials Profile</h1>
-    </div>
-	<hr >
+	<div>
+		<h1>Companies Financials Profile</h1>
+	</div>
+	<hr>
 	</hr>
 	<h3>Providing detailed company analysis since 2020</h3>
-    <hr>
-	<form >
-    <label>Select Company</label>
-		<select id="mySelect" name="companies" onchange="myFunction()">
+	<hr>
+	<div>
+		<form>
+			<label>Select Company</label>
+			<select id="mySelect" name="companies" onchange="myFunction()">
             <option id="blank" class="options" value="">Company</option>
             <option id="facebook" class="options" value="FB">Facebook</option>
             <option id="amazon"class="options" value="AMZN">Amazon</option>
@@ -26,12 +27,15 @@
             <option id="netflix"class="options" value="NFLX">Netflix</option>
             <option id="google" class="options"value="GOOG">Google</option>
         </select>
-      
-		<br><br>
-		
+
+			<br><br>
+
     </form>
-    <p id="demo"></p>
-    <button id="getData">Get</button>
+			<p id="demo"></p>
+			<button id="getData">Get</button>
+	</div>
+    <div id="demo"></div>
+
 
 	<script src="index.js"></script>
 </body>

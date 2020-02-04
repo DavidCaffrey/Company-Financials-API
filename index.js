@@ -58,7 +58,8 @@ function genHtmlFromJson(jsObj){
     txt += "<tr><td>net borrowings</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netBorrowings.longFmt  + "</td><td>total equity</td><td>" + 
     jsObj.balanceSheetHistory.balanceSheetStatements[0].totalStockholderEquity.longFmt + "</td><td>net income</td><td>" + jsObj.incomeStatementHistory.incomeStatementHistory[0].netIncome.longFmt + "</td></tr>";  
 
-    txt += "<tr><td>cash from operations</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].totalCashFromOperatingActivities.longFmt  + "</td></tr>";  
+    txt += "<tr><td>cash from operations</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].totalCashFromOperatingActivities.longFmt  + "</td><td>total assets</td><td>" +jsObj.balanceSheetHistory.balanceSheetStatements[0].totalAssets.longFmt +
+     "</td><td>total revenue</td><td>" + jsObj.incomeStatementHistory.incomeStatementHistory[0].totalRevenue.longFmt +"</td></tr>";  
     txt += "<tr></tr>";    
     txt += "</table>"
     document.getElementById("demo").innerHTML = txt;

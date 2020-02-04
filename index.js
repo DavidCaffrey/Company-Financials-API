@@ -52,8 +52,12 @@ function genHtmlFromJson(jsObj){
     var txt= "";
     txt += "<table border='1px solid green'>"
     txt += "<tr><th>CASH FLOW</th><th>AMOUNT</th><th>BALANCE SHEET</th><th>AMOUNT</th><th>INCOME</th><th>AMOUNT</th></tr>"
-    txt += "<tr><td>net income</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netBorrowings.longFmt  + "</td></tr>";
-    txt += "<tr><td>net borrowings</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netIncome.longFmt  + "</td></tr>";  
+    txt += "<tr><td>net income</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netIncome.longFmt  + "</td><td>total liabilities</td>" +
+    "<td> " + jsObj.balanceSheetHistory.balanceSheetStatements[0].totalLiab.longFmt + "</td><td>income before tax</td><td>" + jsObj.incomeStatementHistory.incomeStatementHistory[0].incomeBeforeTax.longFmt + "</td></tr>";
+
+    txt += "<tr><td>net borrowings</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].netBorrowings.longFmt  + "</td><td>total equity</td><td>" + 
+    jsObj.balanceSheetHistory.balanceSheetStatements[0].totalStockholderEquity.longFmt + "</td><td>net income</td><td>" + jsObj.incomeStatementHistory.incomeStatementHistory[0].netIncome.longFmt + "</td></tr>";  
+
     txt += "<tr><td>cash from operations</td><td>" + jsObj.cashflowStatementHistory.cashflowStatements[0].totalCashFromOperatingActivities.longFmt  + "</td></tr>";  
     txt += "<tr></tr>";    
     txt += "</table>"

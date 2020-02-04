@@ -1,16 +1,17 @@
+var selected = "hello";
 
-
-
-
+function myFunction() {
+   selected = document.getElementById("mySelect").value;
+  console.log(selected);
+}
 
 
 
 
 $(document).ready(function(){
-    var selected = $("#mySelect").text();
     console.log(selected);
     $("button").click(function(){
-        var selected = $("#mySelect").text();
+        
         var settings = {
 	    "async": true,
 	    "crossDomain": true,

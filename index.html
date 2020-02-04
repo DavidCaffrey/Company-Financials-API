@@ -17,14 +17,14 @@
 	<h3>Providing detailed company analysis since 2020</h3>
     <hr>
 	<form >
-    <label>Company</label>
-		<select id="mySelect" name="companies" onchange="companyName(document.getElementById('mySelect').value)"
-            
-            <option id="facebook" value="FB">Facebook</option>
-            <option id="amazon" value="AMZN">Amazon</option>
-            <option id="apple" value="AAPL">Apple</option>
-            <option id="netflix" value="NFLX">Netflix</option>
-            <option id="google" value="GOOG">Google</option>
+    <label>Select Company</label>
+		<select id="mySelect" name="companies" required>
+            <option id="blank" class="options" value="">Company</option>
+            <option id="facebook" class="options" value="FB">Facebook</option>
+            <option id="amazon"class="options" value="AMZN">Amazon</option>
+            <option id="apple"class="options" value="AAPL">Apple</option>
+            <option id="netflix"class="options" value="NFLX">Netflix</option>
+            <option id="google" class="options"value="GOOG">Google</option>
         </select>
       
 		<br><br>

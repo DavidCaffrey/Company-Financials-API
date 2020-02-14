@@ -23,7 +23,7 @@ $(document).ready(function () {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-                "x-rapidapi-key": "801e9cc85emsh011e19eee53d290p16417ejsn0b14e78123b6"
+                "x-rapidapi-key": "KEY GOES HERE"
             }
         }
         $.ajax(settings).done(function (response) {
